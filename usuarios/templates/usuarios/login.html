@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iniciar Sesión</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script> 
+</head>
+<body>
+    <div class="login-page"> 
+        <div class="form"> 
+            <form method="post" class="login-form"> 
+                {% csrf_token %} 
+                {{ form.as_p }} 
+                <button type="submit">Iniciar Sesión</button>
+            </form> 
+        </div>
+    </div>
+{% comment %}     <h2>Iniciar Sesión</h2>
+    <form method="post" action="">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Iniciar Sesión</button>
+    </form> {% endcomment %}
+</body>
+</html>

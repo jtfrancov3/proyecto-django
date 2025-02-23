@@ -1,0 +1,10 @@
+{% extends "usuarios/base.html" %}
+{% load static %}
+{% block content %}
+
+    <h2>Bienvenido {{ request.user.username }}!</h2>
+
+    <a href="{% url 'lista_categorias' %}"  class="btn-blue">Gestionar Categorias</a>
+    <a href="{% url 'logout' %}" class="btn-red">Cerrar Sesión</a>
+
+{% endblock  %}

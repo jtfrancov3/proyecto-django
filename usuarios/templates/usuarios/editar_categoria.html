@@ -1,0 +1,12 @@
+{% extends "usuarios/base.html" %}
+{% block content %}
+<h2> Editar una categoria </h2>
+<a href="{% url 'lista_categorias' %}" class='btn-blue' >Cancelar</a>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class='btn-yellow'>Guardar Cambios</button>
+</form>
+
+{% endblock  %}

@@ -1,0 +1,20 @@
+{% extends "usuarios/base.html" %}
+{% load static %}
+{% block content %}
+
+<h1>Categoria: {{ categoria.nombre }} </h1>
+<h3>Descripción: {{ categoria.descripcion }} </h3>
+<h2>Productos:</h2>
+
+<ol>
+    {% for producto in productos %}
+        <li> {{ producto.nombre}} - {{ producto.descripcion }} </li>
+    {% empty %}
+        <p> No hay Productos registrados en esta categoria </p>
+    {% endfor %}
+
+</ol>
+
+
+<a href="{% url 'lista_categorias' %}"  class="btn">Volver a Lista de Categorias</a>
+{% endblock  %}

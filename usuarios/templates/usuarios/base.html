@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final Django</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script> 
+</head>
+<body>
+    <header  class='cabecera'>
+        <h1>Mi proyecto final Curso Django</h1>
+    </header>
+
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+
+    <footer  class='pie'>
+        <p>2025 - Curso de Django</p>
+    </footer>
+</body>
+</html>

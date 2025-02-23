@@ -1,0 +1,20 @@
+{% extends "usuarios/base.html" %}
+{% load static %}
+{% block content %}
+<h1>Se eliminará la siguiente categoría con el siguiente detalle:</h1>
+<h2>Categoria: {{ categoria.nombre }} </h2>
+<h3>Descripción: {{ categoria.descripcion }} </h3>
+<h2>Productos:</h2>
+
+<ol>
+    {% for producto in productos %}
+        <li> {{ producto.nombre}} - {{ producto.descripcion }} </li>
+    {% empty %}
+        <p> No hay Productos registrados en esta categoria </p>
+    {% endfor %}
+
+</ol>
+
+<a href="{% url 'lista_categorias' %}"  class="btn_blue">Cancelar Eliminación</a>
+<a href="{% url 'eliminar_categoria' categoria_id=categoria.id %}"  class="btn-red">Eliminar esta categoria</a>
+{% endblock  %}
