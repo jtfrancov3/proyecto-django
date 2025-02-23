@@ -18,7 +18,7 @@ proyecto-django
   # Nota: En caso de existir actualizaciones, actualizar el pip:
 	python.exe -m pip install --upgrade pip
 
-# Movernse al directorio del proyecto clonado:
+# Moverse al directorio del proyecto clonado:
   cd proyecto-django
 
 # Crear migraciones:
@@ -36,3 +36,6 @@ proyecto-django
 # Credenciales de acceso para pruebas:
   Usuario: jtfrancov
   Contraseña: 123456
+
+# Notas:
+  Ya se tienen datos de prueba de categorias para poder probar el CRUD
