@@ -1,6 +1,8 @@
 # proyecto-django
 proyecto-django
 
+# Descripción
+  Este es un proyecto para gestionar productos que pertenecen a alguna categoria como lacteos, bebidas, etc., en esta version del sistema se tiene el CRUD de las categorias solamente, aunque ya se tienen los modelos para los productos, se utiliza SQLlite para guardar los datos del sistema.
 
 # Clonar el proyecto:
   git clone https://github.com/jtfrancov3/proyecto-django.git
